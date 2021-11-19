@@ -50,7 +50,7 @@ const team = [
     {
         'nome' : 'Barbara Ramos',
         'ruolo' : 'Graphic Designer',
-        'foto' : '/img/barbara-ramos-graphic-designer.jpg'
+        'foto' : 'img/barbara-ramos-graphic-designer.jpg'
     }
 
 ];
@@ -61,8 +61,16 @@ for (let i = 0; i < team.length; i++){
 
     document.querySelector(".team-container").innerHTML += `
     <div class="team-card">
-    <div class="card-image">${team[i].foto}</div>
-    <div class="card-text"><h3>${team[i].nome}</h3></br><p>${team[i].ruolo}</p></div>
+    <div class="card-image">
+    <img
+    src='${team[i].foto}'
+    />
+    </div> 
+    <div class="card-text">
+    <h3>${team[i].nome}</h3>
+    </br>
+    <p>${team[i].ruolo}</p>
+    </div>
     </div>`
     
 };
