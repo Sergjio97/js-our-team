@@ -57,6 +57,8 @@ const team = [
 
 // console.log(team);
 
+// *****CICLO FOR PER SCORRERE L'ARRAY E INSERIRE GLI OGGETTI NEL DOM*****
+
 for (let i = 0; i < team.length; i++){
 
     document.querySelector(".team-container").innerHTML += `
