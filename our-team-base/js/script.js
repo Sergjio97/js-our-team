@@ -60,6 +60,7 @@ const team = [
 for (let i = 0; i < team.length; i++){
 
     document.querySelector(".team-container").innerHTML += `
+
     <div class="team-card">
     <div class="card-image">
     <img
@@ -68,7 +69,6 @@ for (let i = 0; i < team.length; i++){
     </div> 
     <div class="card-text">
     <h3>${team[i].nome}</h3>
-    </br>
     <p>${team[i].ruolo}</p>
     </div>
     </div>`
